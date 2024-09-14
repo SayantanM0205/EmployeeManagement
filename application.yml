@@ -1,8 +1,8 @@
-eureka
-  .client
-    .register-with-eureka: true
-    .fetch-registry: true
-    .serviceUrl:
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
       defaultZone: http://localhost:8094/eureka
-  .instance
-    .prefer-ip-address: true
+  instance:
+    prefer-ip-address: true
